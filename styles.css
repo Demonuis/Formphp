@@ -39,7 +39,6 @@ label {
 }
 
 input[type="text"],
-input[type="email"],
 input[type="number"] {
   width: 100%;
   padding: 10px;
@@ -54,7 +53,6 @@ input[type="number"] {
 }
 
 input[type="text"]:focus,
-input[type="email"]:focus,
 input[type="number"]:focus {
   border-bottom: 2px solid #00a3cc;
 }
