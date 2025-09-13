@@ -3,51 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro e Inicio de Sesión</title>
+  <title>Registro e Inicio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <!-- Formulario de Registro -->
-    <div class="form-container">
-      <h2>Registrarte</h2>
-      <form action="informacion.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" required>
-
-        <label for="edad">Edad:</label>
-        <input type="number" name="edad" required>
-
-        <label for="direccion">Dirección:</label>
-        <input type="text" name="direccion" required>
-
-        <label for="cargo">Cargo:</label>
-        <input type="text" name="cargo" required>
-
-        <label for="correo">Correo:</label>
-        <input type="email" name="correo" required>
-
-        <label for="salario">Salario:</label>
-        <input type="number" name="salario" required>
-
-        <button type="submit" name="registrar">Registrar</button>
+    <!-- Inicio de sesión -->
+    <div class="form-box">
+      <h2>Iniciar Sesión</h2>
+      <form action="informacion.php" method="post">
+        <input type="email" name="correo_login" placeholder="Correo" required>
+        <input type="password" name="contrasena_login" placeholder="Contraseña" required>
+        <button type="submit">Entrar</button>
       </form>
     </div>
 
-    <!-- Formulario de Inicio de Sesión -->
-    <div class="form-container">
-      <h2>Iniciar Sesión</h2>
-      <form action="informacion.php" method="POST">
-        <label for="correoLogin">Correo:</label>
-        <input type="email" name="correoLogin" required>
-
-        <label for="password">Contraseña:</label>
-        <input type="password" name="password" required>
-
-        <button type="submit" name="iniciar">Iniciar Sesión</button>
+    <!-- Registro -->
+    <div class="form-box">
+      <h2>Registrarte</h2>
+      <form action="informacion.php" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="number" name="edad" placeholder="Edad" required>
+        <input type="text" name="cargo" placeholder="Cargo" required>
+        <input type="email" name="correo" placeholder="Correo" required>
+        <input type="number" name="salario" placeholder="Salario" required>
+        <button type="submit">Registrar</button>
       </form>
     </div>
   </div>
 </body>
 </html>
-
