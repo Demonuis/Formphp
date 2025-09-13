@@ -1,23 +1,37 @@
-<?php
-$nombre = $_POST['nombre'];
-$edad = $_POST['edad'];
-$direccion = $_POST['direccion'];
-$correo = $_POST['correo'];
-$cargo = $_POST['cargo'];
-$salario = $_POST['salario'];
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Información Recibida</title>
+    <title>Formulario de Empleado</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Información recibida</h2>
-    <p>El empleado **<?php echo $nombre; ?>** tiene **<?php echo $edad; ?>** años.</p>
-    <p>Su correo electrónico es: **<?php echo $correo; ?>**.</p>
-    <p>Actualmente ocupa el cargo de: **<?php echo $cargo; ?>**.</p>
-    <p>Vive en **<?php echo $direccion; ?>** y su salario es: **$<?php echo $salario; ?>**.</p>
+    <div class="form-container">
+        <h2>Formulario de Información</h2>
+        <form action="informacion.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+
+            <label for="salario">Salario:</label>
+            <input type="number" id="salario" name="salario" required>
+
+            <input type="submit" value="Enviar Información">
+        </form>
+        <div id="successMessage">¡Información enviada con éxito! ✅</div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
