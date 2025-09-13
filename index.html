@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Formulario de Empleado</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Empleados</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Formulario de Información</h2>
-        <form action="informacion.php" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" required>
-
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" required>
-
-            <label for="correo">Correo Electrónico:</label>
+  <div class="form-container">
+    <h2>Registro de Empleados</h2>
+    <form action="informacion.php" method="POST">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+        
+          <label for="correo">Correo Electrónico:</label>
             <input type="email" id="correo" name="correo" required>
 
             <label for="cargo">Cargo:</label>
             <input type="text" id="cargo" name="cargo" required>
 
-            <label for="salario">Salario:</label>
-            <input type="number" id="salario" name="salario" required>
+      <label for="edad">Edad</label>
+      <input type="number" id="edad" name="edad" required>
 
-            <input type="submit" value="Enviar Información">
-        </form>
-        <div id="successMessage">¡Información enviada con éxito! ✅</div>
-    </div>
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" name="direccion" required>
 
-    <script src="script.js"></script>
+      <label for="salario">Salario</label>
+      <input type="number" id="salario" name="salario" required>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
 </body>
 </html>
+
+          
+
+            
