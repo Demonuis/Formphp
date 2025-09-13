@@ -1,35 +1,23 @@
+<?php
+$nombre = $_POST['nombre'];
+$edad = $_POST['edad'];
+$direccion = $_POST['direccion'];
+$correo = $_POST['correo'];
+$cargo = $_POST['cargo'];
+$salario = $_POST['salario'];
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro e Inicio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Información Recibida</title>
 </head>
 <body>
-  <div class="container">
-    <!-- Inicio de sesión -->
-    <div class="form-box">
-      <h2>Iniciar Sesión</h2>
-      <form action="informacion.php" method="post">
-        <input type="email" name="correo_login" placeholder="Correo" required>
-        <input type="password" name="contrasena_login" placeholder="Contraseña" required>
-        <button type="submit">Entrar</button>
-      </form>
-    </div>
-
-    <!-- Registro -->
-    <div class="form-box">
-      <h2>Registrarte</h2>
-      <form action="informacion.php" method="post">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="number" name="edad" placeholder="Edad" required>
-        <input type="text" name="cargo" placeholder="Cargo" required>
-        <input type="email" name="correo" placeholder="Correo" required>
-        <input type="number" name="salario" placeholder="Salario" required>
-        <button type="submit">Registrar</button>
-      </form>
-    </div>
-  </div>
+    <h2>Información recibida</h2>
+    <p>El empleado **<?php echo $nombre; ?>** tiene **<?php echo $edad; ?>** años.</p>
+    <p>Su correo electrónico es: **<?php echo $correo; ?>**.</p>
+    <p>Actualmente ocupa el cargo de: **<?php echo $cargo; ?>**.</p>
+    <p>Vive en **<?php echo $direccion; ?>** y su salario es: **$<?php echo $salario; ?>**.</p>
 </body>
 </html>
