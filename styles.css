@@ -39,6 +39,7 @@ label {
 }
 
 input[type="text"],
+input[type="email"],
 input[type="number"] {
   width: 100%;
   padding: 10px;
